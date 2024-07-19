@@ -1,0 +1,119 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    background-color: black;
+    background-image: url('../img/background.png'); 
+    background-size: 65%; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    text-align: center;
+}
+
+.logo img {
+    margin-top: 20px;
+}
+
+.logo p {
+    margin-top: -20px; 
+}
+
+.slogan {
+    color: darkgoldenrod;
+    font-family: "Sail", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.welcome h1{
+    color: darkgoldenrod;
+}
+
+.welcome hr {
+    width: 45%;
+    height: 4px;
+    align: center;
+    background-color: #444444; 
+    display: inline-block;
+}
+
+.about {
+    max-width: 35%; 
+    margin: 0 auto; 
+    padding: 0 15px; 
+}
+
+.container-sm img {
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .imagem {
+        left: auto; 
+    }
+}
+
+.centralizado {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.invertido img{
+	filter: invert(1);
+}
+
+footer {
+	background-color: black;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.lateral {
+    text-align: left;
+    justify-content: left;
+}
+
+.golden {
+    color: darkgoldenrod;
+}
+
+.lista {
+    list-style-type: none; 
+    counter-reset: item;
+    padding-left: 0; 
+  }
+  
+  .lista li::before {
+    content: counter(item) "º ";
+    counter-increment: item; 
+    color: darkgoldenrod;
+    font-size: 32px;
+  }
+  
+  .content {
+  }
