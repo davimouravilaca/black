@@ -1,18 +1,27 @@
-body {
+html, body {
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+  }
+  
+  body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: white;
     background-color: black;
     background-image: url('../img/background.png'); 
-    background-size: 65%; 
+    background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
-    background-attachment: fixed;
-	display: flex;
+    background-attachment: fixed; */
+    display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
+  }
+  
+
 
 .content {
     text-align: center;
@@ -115,5 +124,11 @@ footer {
     font-size: 32px;
   }
   
-  .content {
-  }
+
+  .centered-paragraph {
+    max-width: 600px; 
+    margin: 0 auto;  
+    text-align: center;
+    padding: 10px;  
+    box-sizing: border-box; 
+}
